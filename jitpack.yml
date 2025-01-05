@@ -1,3 +1,3 @@
 install: 
   - FILE="-Dfile=pocketbaseMobile.aar" 
-  - mvn install:install-file $FILE -DgroupId=com.github.rohitsangwan01 -DartifactId=pocketbase_android -Dversion=1.0.0 -Dpackaging=aar -DgeneratePom=true
+  - mvn install:install-file $FILE -DgroupId=com.github.rohitsangwan01 -DartifactId=pocketbase_android -Dversion=2.0.0 -Dpackaging=aar -DgeneratePom=true
