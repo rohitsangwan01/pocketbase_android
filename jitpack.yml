@@ -1,3 +1,4 @@
-install: 
-  - FILE="-Dfile=pocketbaseMobile.aar" 
-  - mvn install:install-file $FILE -DgroupId=com.github.rohitsangwan01 -DartifactId=pocketbase_android -Dversion=2.0.1 -Dpackaging=aar -DgeneratePom=true
+install:
+  - Version="2.1.0" 
+  - wget -O pocketbaseMobile.aar https://github.com/rohitsangwan01/pocketbase_android/releases/download/$Version/pocketbaseMobile.aar
+  - mvn install:install-file -Dfile=pocketbaseMobile.aar -DgroupId=com.github.rohitsangwan01 -DartifactId=pocketbase_android -Dversion=$Version -Dpackaging=aar -DgeneratePom=true
